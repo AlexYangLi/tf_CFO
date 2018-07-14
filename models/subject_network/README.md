@@ -13,10 +13,12 @@ use fixed type vector to represent subject using type infomation
 ### get started
 
 go to any of the folders corresponding to a subject prediction model:
+
 - train
 ```python
 python train.py
 ```
+Note: To train sub_transe module, `sub_transe_embed.npy` is required. Go to ``TransE`` directory & follow the instruction on README.md, train & get it.
 
 - test
 ```python
