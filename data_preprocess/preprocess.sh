@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "\n\n create knowledge graph\n"
 python create_kg.py ../raw_data/SimpleQuestions_v2/freebase-subsets/freebase-FB5M.txt ../raw_data/SimpleQuestions_v2/dataset/ ../data
 

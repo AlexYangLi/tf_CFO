@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 python inference.py \
 --entdect_type "bilstm_crf" \
 --subnet_type "transe" \

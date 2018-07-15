@@ -48,7 +48,7 @@ def fetch_triple(fb_file, dataset_dir, out_dir):
                     triples[subject] = [(relation, www2fb(obj))]
                 if subject not in sub2rel:
                     sub2rel[subject] = set()
-                sub2rel.add(relation)
+                sub2rel[subject].add(relation)
     
     # agument with triples from dataset
     data_files = [os.path.join(os.path.dirname(dataset_dir), file) for file in os.listdir(dataset_dir)]
