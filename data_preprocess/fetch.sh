@@ -7,7 +7,7 @@ mkdir raw_data
 cd ./raw_data
 
 printf "\nDownloading SimpleQuestions dataset...\n"
-#wget https://www.dropbox.com/s/tohrsllcfy7rch4/SimpleQuestions_v2.tgz
+wget https://www.dropbox.com/s/tohrsllcfy7rch4/SimpleQuestions_v2.tgz
 
 printf "\nUnzipping SimpleQuestions dataset...\n"
 tar -xvzf SimpleQuestions_v2.tgz
@@ -19,7 +19,7 @@ mv annotated*.txt ./dataset
 
 cd ..
 printf "\nDownloading FB5M-extra...\n"
-#wget https://www.dropbox.com/s/dt4i1a1wayks43n/FB5M-extra.tar.gz
+wget https://www.dropbox.com/s/dt4i1a1wayks43n/FB5M-extra.tar.gz
 
 echo "\nUnzipping FB5M-extra...\n"
 tar -xzf FB5M-extra.tar.gz
