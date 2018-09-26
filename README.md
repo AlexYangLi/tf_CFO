@@ -1,5 +1,5 @@
 # tf_CFO
-Tensorflow implementation of [CFO](https://www.aclweb.org/anthology/P/P16/P16-1076.pdf)
+Tensorflow implementation of [CFO: Conditional Focused Neural Question Answering with Large-scale Knowledge Bases](https://www.aclweb.org/anthology/P/P16/P16-1076.pdf)
 
 ## Requirement
 - python >= 3.5
