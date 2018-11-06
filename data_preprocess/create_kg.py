@@ -17,6 +17,7 @@
 """
 
 import os
+import codecs
 import sys
 from utils import www2fb, pickle_save
 
@@ -29,7 +30,7 @@ def fetch_triple(fb_file, dataset_dir, out_dir):
     triples = {}
     sub2rel = {}
 
-    with open(fb_file, 'r')as reader:
+    with codecs.open(fb_file, 'r', encoding='utf8')as reader:
         for line in reader:
             fields = line.strip().split('\t')
 
@@ -53,7 +54,7 @@ def fetch_triple(fb_file, dataset_dir, out_dir):
     # agument with triples from dataset
     data_files = [os.path.join(os.path.dirname(dataset_dir), file) for file in os.listdir(dataset_dir)]
     for data_file in data_files:
-        with open(data_file, 'r')as reader:
+        with codecs.open(data_file, 'r', encoding='utf8')as reader:
             for line in reader:
                 items = line.strip().split('\t')
 
